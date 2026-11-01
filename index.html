@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+
+<style>
+@font-face {
+  font-family: "XTRANHO";
+  src: url("./XTRANHO-Regular.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+
+  font-family: "XTRANHO", sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000;
+}
+
+textarea::placeholder {
+  color: #999999;
+}
+</style>
+</head>
+
+<body>
+<textarea placeholder="Comece a escrever..."
+spellcheck="false"></textarea>
+</body>
+</html>
