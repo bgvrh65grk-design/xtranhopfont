@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,7 +29,6 @@ textarea {
   height: 600px;
   padding: 0;
   margin: 0;
-
   border: none;
   outline: none;
   resize: none;
@@ -43,6 +41,7 @@ textarea {
 
   color: #C6FF33;
   caret-color: #C6FF33;
+  text-transform: lowercase;
 }
 
 textarea::placeholder {
@@ -50,11 +49,30 @@ textarea::placeholder {
   font-size: 100pt;
   color: #C6FF33;
   opacity: 0.65;
+  text-transform: lowercase;
 }
 </style>
 </head>
 
 <body>
-<textarea placeholder="Comece a escrever..." spellcheck="false"></textarea>
+
+<textarea
+  placeholder="comece a escrever..."
+  spellcheck="false"
+></textarea>
+
+<script>
+const caixa = document.querySelector("textarea");
+
+caixa.addEventListener("input", function() {
+  const inicio = this.selectionStart;
+  const fim = this.selectionEnd;
+
+  this.value = this.value.toLowerCase();
+
+  this.setSelectionRange(inicio, fim);
+});
+</script>
+
 </body>
 </html>
