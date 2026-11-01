@@ -8,9 +8,10 @@
   <style>
     @font-face {
       font-family: "XTRANHO";
-      src: url("./XTRANHO-Regular.otf") format("opentype");
-      font-weight: normal;
+      src: url("https://cdn.jsdelivr.net/gh/bgvrh65grk-design/xtranhopfont@main/XTRANHO-Regular.otf") format("opentype");
+      font-weight: 400;
       font-style: normal;
+      font-display: block;
     }
 
     * {
@@ -21,7 +22,6 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      min-height: 100%;
       background: transparent;
     }
 
@@ -37,17 +37,17 @@
       resize: none;
       background: transparent;
 
-      font-family: "XTRANHO", sans-serif;
+      font-family: "XTRANHO", sans-serif !important;
       font-size: 133.33px;
       line-height: 1.2;
-      font-weight: normal;
+      font-weight: 400;
 
       color: #C6FF33;
       caret-color: #C6FF33;
-      overflow: auto;
     }
 
     textarea::placeholder {
+      font-family: "XTRANHO", sans-serif;
       color: #C6FF33;
       opacity: 0.65;
     }
